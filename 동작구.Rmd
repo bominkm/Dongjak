@@ -1,13 +1,3 @@
----
-title: "Untitled"
-author: "Park Geon Tae"
-date: '2020 4 27 '
-output:
-  word_document: default
-  html_document: default
----
-
-```{r}
 library(dplyr)
 library(fpc)
 library(cluster)
@@ -68,19 +58,6 @@ fviz_cluster(data.k, data1, cluster = data.k)
 
 tab_cluster <- cbind(data_, data.k$cluster)
 write.csv(tab_cluster, "final.csv")
-```
-
-G2 : PC1 score가 높음 -> CCTV / 보안등 / 많음
-     PC2 score가 약간 낮음 -> 시설 상대적으로 많음 비상벨 상대적으로 부족
-     
-G3 : PC2 score가 낮음 -> 시설 많음 비상벨 부족 
-     PC1 score가 약간 낮음 -> CCTV / 보안등 상대적으로 부족   
-
-G4 : PC1 score가 낮음 -> CCTV/ 비상벨 / 보안등 적음 
-
-G5 : PC1 score와 PC2 score 모두 높음 -> CCTV/ 보안등 / 비상벨 많음 시설 상대적으로 부족
-
-G6 : PC1 score가 높음 -> CCTV / 보안등 많음.
 
 
 
