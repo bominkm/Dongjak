@@ -58,23 +58,3 @@ fviz_cluster(data.k, data1, cluster = data.k)
 
 tab_cluster <- cbind(data_, data.k$cluster)
 write.csv(tab_cluster, "final.csv")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
